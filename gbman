@@ -14,12 +14,25 @@ else
   fi
 fi
 
+
+
 if [ $1 = "clean" ] || [ $1 = "cl" ]; then
 if [ -d "gbdir/" ]; then 
 trashcount=`find gbdir -type f | wc -l`
   echo "[GarbageMan] - I found $trashcount trash's files"
-  rm -rf gbdir
-  echo "[GarbageMan]  - Cleaning garbage collection directory." 
+ mv gbdir/ /tmp/gbcollected
+  echo "[GarbageMan]  - collecting your garbage." 
+else
+ echo "[GarbageMan]  - You don't have a garbage collection directory" 
+fi
+
+fi
+if [ $1 = "cleanforce" ] || [ $1 = "clf" ] || [ $1 = "cleanf" ]; then
+if [ -d "gbdir/" ]; then 
+trashcount=`find gbdir -type f | wc -l`
+  echo "[GarbageMan] - I found $trashcount trash's files"
+ rm -rf gbdir/ 
+  echo "[GarbageMan]  - Cleaning your garbage directory." 
 else
  echo "[GarbageMan]  - You don't have a garbage collection directory" 
 fi
