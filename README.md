@@ -4,7 +4,7 @@
 <div id="header" align="center">
     <img width="550" src="./gif/tutorial.gif">
   
-  Script in bash to store your passwords or tokens of any service securely and locally.
+Automates/facilitates creation of temporary file folders.
   </div>
   
   
