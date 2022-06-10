@@ -12,7 +12,6 @@ Automates/facilitates creation of temporary file folders.
 1. First clone my repository ``git clone https://github.com/mavinsi/gbman``
 2. Give execution permission to the script ``sudo chmod +x install.sh``
 3. now run the install script ``sudo ./install.sh``
-4. 
 ## 🚮 Using
 
 To create a repository of garbage, temporary or useless files type ``gbman create`` or ``gbman cr`` with that will be created a repository called ``gbdir`` (GarbageDirectory), in it you can add, clone in github repositories among other things that you will only use for a short period of time.
