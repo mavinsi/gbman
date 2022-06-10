@@ -1,0 +1,27 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then 
+  echo ""
+  exit 1
+fi
+
+if [ $1 = "create" ] || [ $1 = "cr" ]; then
+if [ -d "gbdir/" ]; then 
+  echo "[GarbageMan] - You already have a collection directory" 
+else
+  mkdir gbdir
+  echo "[GarbageMan] - Created garbage collection directory." 
+  fi
+fi
+
+if [ $1 = "clean" ] || [ $1 = "cl" ]; then
+if [ -d "gbdir/" ]; then 
+trashcount=`find gbdir -type f | wc -l`
+  echo "[GarbageMan] - I found $trashcount trash's files"
+  rm -rf gbdir
+  echo "[GarbageMan]  - Cleaning garbage collection directory." 
+else
+ echo "[GarbageMan]  - You don't have a garbage collection directory" 
+fi
+
+fi
