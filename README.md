@@ -12,26 +12,26 @@ Automates/facilitates creation of temporary file folders.
 1. First clone my repository ``git clone https://github.com/mavinsi/gbman``
 2. Give execution permission to the script ``sudo chmod +x install.sh``
 3. now run the install script ``sudo ./install.sh``
-## 🚮 How it works and how to use
+## 🚮 Tutorial
 
 
-<details>
-    <summary>How create a trash storage directory?</summary>
-<br>
+### How create a trash storage directory?
+
+
 To create your directory to throw your garbage is very simple just type: ``gbman create`` or ``gbman cr``
     
 ```
-> gbman create 
+ gbman create 
 [GarbageMan] - Created garbage collection directory.
 ```
     
-</details>
 
 
 
-<details>
-    <summary>How to send your file to the trash storage directory</summary>
+
+### How to send your file to the trash storage directory
 <br>
+
 To upload your file to the collection directory, just type: ``gbman get filename/directory``
     
 ```
@@ -40,12 +40,11 @@ To upload your file to the collection directory, just type: ``gbman get filename
 [GarbageMan]  - trash collected
 ```
     
-</details>
 
 
 
-<details>
-    <summary>How to discard a file?</summary>
+
+### How to discard a file?
 <br>
 To dispose of your garbage, in gbman we have 2 options, a light one where your files are sent to /tmp/
 on your system and another where they are automatically removed.
@@ -66,4 +65,4 @@ To hard clean just type: ``gbman cleanf`` or  ``gbman clr``
 [GarbageMan] - i found 1 trash's files
 [GarbageMan]  - incinerate your trash
  ```
-</details>
+
