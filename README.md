@@ -16,8 +16,6 @@ Automates/facilitates creation of temporary file folders.
 
 
 ### How create a trash storage directory?
-
-
 To create your directory to throw your garbage is very simple just type: ``gbman create`` or ``gbman cr``
     
 ```
@@ -30,8 +28,6 @@ To create your directory to throw your garbage is very simple just type: ``gbman
 
 
 ### How to send your file to the trash storage directory
-<br>
-
 To upload your file to the collection directory, just type: ``gbman get filename/directory``
     
 ```
@@ -45,7 +41,6 @@ To upload your file to the collection directory, just type: ``gbman get filename
 
 
 ### How to discard a file?
-<br>
 To dispose of your garbage, in gbman we have 2 options, a light one where your files are sent to /tmp/
 on your system and another where they are automatically removed.
  <hr>
