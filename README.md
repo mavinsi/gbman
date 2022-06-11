@@ -12,8 +12,58 @@ Automates/facilitates creation of temporary file folders.
 1. First clone my repository ``git clone https://github.com/mavinsi/gbman``
 2. Give execution permission to the script ``sudo chmod +x install.sh``
 3. now run the install script ``sudo ./install.sh``
-## 🚮 How use
+## 🚮 How it works and how to use
 
-To create a repository of garbage, temporary or useless files type ``gbman create`` or ``gbman cr`` with that will be created a repository called ``gbdir`` (GarbageDirectory), in it you can add, clone in github repositories among other things that you will only use for a short period of time.
-After you have done what you need and you no longer need the files you can type the command ``gbman clean`` or ``gbman cl`` and all your files that are inside the gbdi will be cleaned by the janitor, with this cleaning method the files can be recovered inside the /tmp/ folder of linux.
-but if you want to permanently remove the files without needing linux to do it for you, should use ``gbman cleanforce`` or ``gbman clf`` and the files will be deleted directly without having to go through /tmp/
+
+<details>
+    <summary>How create a trash storage directory?</summary>
+<br>
+To create your directory to throw your garbage is very simple just type: ``gbman create`` or ``gbman cr``
+    
+```
+> gbman create 
+[GarbageMan] - Created garbage collection directory.
+```
+    
+</details>
+
+
+
+<details>
+    <summary>How to send your file to the trash storage directory</summary>
+<br>
+To upload your file to the collection directory, just type: ``gbman get filename/directory``
+    
+```
+> gbman get useless_files.jar
+[GarbageMan] - Looking for useless_files.jar
+[GarbageMan]  - trash collected
+```
+    
+</details>
+
+
+
+<details>
+    <summary>How to discard a file?</summary>
+<br>
+To dispose of your garbage, in gbman we have 2 options, a light one where your files are sent to /tmp/
+on your system and another where they are automatically removed.
+ <hr>
+    
+To soft clean just type: ``gbman clean`` or ``gbman cl``
+```
+> gbman clean
+[GarbageMan] - I found 1 trash's files
+[GarbageMan]  - Your garbage has been collected    
+```
+ 
+<br>
+    
+To hard clean just type: ``gbman cleanf`` or  ``gbman clr``
+```
+> gbman cleanf
+[GarbageMan] - i found 1 trash's files
+[GarbageMan]  - incinerate your trash
+ ```
+</details>
