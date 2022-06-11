@@ -14,6 +14,17 @@ else
   fi
 fi
 
+if [ $1 = "get" ] || [ $1 = "gt" ]; then
+  echo "[GarbageMan] - Looking for $2"
+if [ -d "gbdir/" ]; then 
+  echo "[GarbageMan]  - collecting your garbage."
+ mv $2 gbdir/
+else
+  echo "[GarbageMan]  - collecting your garbage."
+  mkdir gbdir
+  mv $2 gbdir/
+fi
+fi
 
 
 if [ $1 = "clean" ] || [ $1 = "cl" ]; then
