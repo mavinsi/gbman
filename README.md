@@ -43,7 +43,7 @@ To upload your file to the collection directory, just type: ``gbman get filename
 ### How to discard a file?
 To dispose of your garbage, in gbman we have 2 options, a light one where your files are sent to /tmp/
 on your system and another where they are automatically removed.
- <hr>
+
     
 To soft clean just type: ``gbman clean`` or ``gbman cl``
 ```
