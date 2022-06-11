@@ -41,7 +41,7 @@ fi
 fi
 if [ $1 = "cleanforce" ] || [ $1 = "clf" ] || [ $1 = "cleanf" ]; then
 if [ -d "$HOME/.gbdir" ]; then 
-trashcount=`find gbdir -type f | wc -l`
+trashcount=`find $HOME/.gbdir -type f | wc -l`
   echo "[GarbageMan] - i found $trashcount trash's files"
  rm -rf $HOME/.gbdir 
   echo "[GarbageMan]  - incinerate your trash" 
